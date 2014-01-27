@@ -11,6 +11,6 @@
     ],
     "require" : {
         "zendframework/zendframework" : ">2.2.0",
-        "coogle/CoogleLib" : "dev-master"
+        "coogle/cooglelib" : "dev-master"
     }
 }
