@@ -7,6 +7,11 @@ use CoogleLib\ServiceManager\ServiceLocatorFactory;
 
 class Module
 {
+    public function getModuleDependencies()
+    {
+        return array('CoogleLib');
+    }
+
     public function onBootstrap(MvcEvent $e)
     {
         ServiceLocatorFactory::setInstance($e->getApplication()->getServiceManager());
