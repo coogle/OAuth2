@@ -5,7 +5,7 @@
     "homepage" : "http://www.github.com/coogle/OAuth2",
     "repositories" : [
         {
-            "url" : "https://github.com/coogle/CoogleLib.git",
+            "url" : "/vagrant/composer-dev/CoogleLib",
             "type" : "vcs"
         }
     ],
