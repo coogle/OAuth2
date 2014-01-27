@@ -5,14 +5,8 @@
     "homepage" : "http://www.github.com/coogle/OAuth2",
     "repositories" : [
     {
-      "type" : "package",  
-      "package" : {
-          "name" : "coogle/cooglelib",
-          "source" : {
-              "url" : "/vagrant/composer-dev/CoogleLib",
-              "type" : "git"
-          }
-      }
+        "url" : "/vagrant/composer-dev/CoogleLib",
+        "type" : "git"
     }],
     "require" : {
         "zendframework/zendframework" : ">2.2.0",
