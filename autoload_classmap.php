@@ -1,3 +1,5 @@
 <?php
 
-return array();
+return array(
+	'OAuth2\\Module' => __DIR__ . '/Module.php'
+);
