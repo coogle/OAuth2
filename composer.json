@@ -3,11 +3,6 @@
     "description" : "OAuth2 module for Zend Framework 2",
     "type" : "library",
     "homepage" : "http://www.github.com/coogle/OAuth2",
-    "repositories" : [
-    {
-        "url" : "/vagrant/composer-dev/CoogleLib",
-        "type" : "git"
-    }],
     "require" : {
         "zendframework/zendframework" : ">2.2.0",
         "coogle/cooglelib" : "dev-master"
