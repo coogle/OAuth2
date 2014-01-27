@@ -1,0 +1,9 @@
+{
+    "name" : "coogle/oauth2",
+    "description" : "OAuth2 module for Zend Framework 2",
+    "type" : "library",
+    "homepage" : "http://www.github.com/coogle/OAuth2",
+    "require" : {
+        "zendframework/zendframework" : ">2.2.0"
+    }
+}
