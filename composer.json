@@ -6,11 +6,11 @@
     "repositories" : [
         {
             "url" : "/vagrant/composer-dev/CoogleLib",
-            "type" : "vcs"
+            "type" : "git"
         }
     ],
     "require" : {
         "zendframework/zendframework" : ">2.2.0",
-        "coogle/cooglelib" : "dev-master"
+        "coogle/CoogleLib" : "dev-master"
     }
 }
