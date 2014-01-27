@@ -6,7 +6,7 @@
     "repositories" : [
         {
             "url" : "https://github.com/coogle/CoogleLib.git",
-            "type" : "git"
+            "type" : "vcs"
         }
     ],
     "require" : {
