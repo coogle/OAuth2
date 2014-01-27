@@ -3,7 +3,7 @@
 namespace OAuth2;
 
 use Zend\Mvc\MvcEvent;
-use GoogleGlass\ServiceManager\ServiceLocatorFactory;
+use CoogleLib\ServiceManager\ServiceLocatorFactory;
 
 class Module
 {
