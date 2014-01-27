@@ -8,7 +8,7 @@
         "coogle/cooglelib" : "dev-master"
     },
     "autoload": {
-        "psr-0": {
+        "psr-4": {
             "OAuth2\\": "src/"
         }
     }
