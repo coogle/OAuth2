@@ -32,15 +32,11 @@ return array(
         'auth' => array(
             "client_id" => null,
             "client_secret" => null,
-            "auth_uri" => "https://accounts.google.com/o/oauth2/auth",
-            "token_uri" => "https://accounts.google.com/o/oauth2/token",
+            "auth_uri" => null,
+            "token_uri" => null,
             "redirect_uri" => null,
             "credentials_in_request_body" => true,
-            'scopes' => array(
-                'https://www.googleapis.com/auth/glass.timeline',
-                'https://www.googleapis.com/auth/glass.location',
-                'https://www.googleapis.com/auth/userinfo.profile'
-            ),
+            'scopes' => array(),
         ),
         'httpClient' => array(
             'maxredirects'    => 5,
