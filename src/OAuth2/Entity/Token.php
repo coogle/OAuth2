@@ -53,12 +53,6 @@ class Token implements ServiceLocatorAwareInterface
                ->setRefreshToken(isset($result['refresh_token']) ? $result['refresh_token'] : null)
                ->setTokenType(isset($result['token_type']) ? $result['token_type'] : null);
         
-        if(isset($result['id_token'])) {
-            $jwtDecoder = $this->getServiceLocator()->get('GoogleGlass\OAuth2\JWT');
-            $jwtObj = $jwtDecoder->decode($result['id_token']);
-            $this->setJwt($jwtObj);
-        }
-        
         $date = new \DateTime('now');
         $date->add(\DateInterval::createFromDateString("+{$result['expires_in']} seconds"));
         

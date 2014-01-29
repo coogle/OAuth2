@@ -40,10 +40,13 @@ class Module
     {
         return array(
             'factories' => array(
-                'OAuth2\Http\Client' => 'OAuth2\Factory\ClientFactory',
+                'OAuth2\Api\Client' => 'OAuth2\Factory\Http\Api\ClientFactory',
+                'OAuth2\Http\Client' => 'OAuth2\Factory\Http\ClientFactory',
+                'OAuth2\Client' => 'OAuth2\Factory\ClientFactory',
                 'OAuth2\Storage\Session' => 'OAuth2\Storage\Session',
                 'OAuth2\TokenStore' => 'OAuth2\Storage\StorageFactory',
-                'OAuth2\Token' => 'OAuth2\TokenFactory',
+                'OAuth2\Token' => 'OAuth2\Factory\TokenFactory',
+                'OAuth2\AuthUri' => 'OAuth2\Factory\AuthUriFactory'
             ),
         );
     }

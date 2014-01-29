@@ -13,9 +13,9 @@ class TokenFactory implements FactoryInterface
     {
         $config = $serviceLocator->get('Config');
         
-        $tokenStorageObj = $serviceLocator->get($config['googleglass']['tokenStore']);
+        $tokenStorageObj = $serviceLocator->get($config['oauth2']['tokenStore']);
         
-        if(!$tokenStorageObj instanceof \GoogleGlass\OAuth2\Storage\StorageInterface) {
+        if(!$tokenStorageObj instanceof \OAuth2\Storage\StorageInterface) {
             throw new ServiceNotFoundException("Provided storage service must implement StorageInterface");
         }
         

@@ -154,7 +154,7 @@ class CallbackController extends AbstractActionController
         
         $token = clone $this->getServiceLocator()->get('OAuth2\Token');
         
-        $tokenStorageObj->store($token->fromApiResult($tokenData));
+        $tokenStorageObj->store($token->fromArrayResult($tokenData));
         
         $this->getEventManager()->trigger(OAuth2Events::EVENT_NEW_AUTH_TOKEN, null, array('token' => $token));
         
