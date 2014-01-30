@@ -116,14 +116,14 @@ class CallbackController extends AbstractActionController
         }
         
         if($this->getRequest()->getQuery('error', false)) {
-             $this->logEvent("Error authenticating with Google: {$this->getRequest()->getQuery('error')}", Logger::ERR);
-             throw new \RuntimeException("Error Authenticating with Google");
+             $this->logEvent("Error authenticating: {$this->getRequest()->getQuery('error')}", Logger::ERR);
+             throw new \RuntimeException("Error Authenticating");
         }
         
         $code = $this->getRequest()->getQuery('code', false);
         
         if(!$code) {
-            $this->logEvent("Did not receive code from Google as expected during OAuth2", Logger::ERR);
+            $this->logEvent("Did not receive code from authentication server as expected during OAuth2", Logger::ERR);
             throw new \RuntimeException("Did not receive code as expected");
         }
         
