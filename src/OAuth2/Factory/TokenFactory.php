@@ -22,7 +22,12 @@ class TokenFactory implements FactoryInterface
         $token = $tokenStorageObj->retrieve();
         
         if(!$token instanceof \OAuth2\Entity\Token) {
-            $token = new Token();
+        
+            if(!class_exists($config['oauth2']['tokenEntity'])) {
+                throw new \RuntimeException("Specified token entity could not be located");
+            }
+            
+            $token = new $config['oauth2']['tokenEntity'];
         }
         
         return $token;

@@ -29,6 +29,7 @@ return array(
     ),
     'oauth2' => array(
         'tokenStore' => 'OAuth2\Storage\Session',
+        'tokenEntity' => 'OAuth2\Entity\Token',
         'auth' => array(
             "client_id" => null,
             "client_secret" => null,

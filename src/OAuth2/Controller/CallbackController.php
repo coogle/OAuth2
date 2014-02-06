@@ -92,7 +92,7 @@ class CallbackController extends AbstractActionController
         switch(true) {
             case is_null($config['auth']['client_id']):
             case is_null($config['auth']['client_secret']):
-                throw new \RuntimeException("You must configure this module"); 
+                throw new \RuntimeException("You must configure the OAuth2 module"); 
         }
         
         $tokenStorageObj = $this->getServiceLocator()->get($config['tokenStore']);
